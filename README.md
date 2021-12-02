@@ -8,7 +8,7 @@ The future is bright for multi-messenger astronomy. Many observatories are comin
 Easily add or remove observatories by editing ```timeline.txt```
 
 ```
-python plot_strategy.ipynb
+python plot_timeline_observatories.py
 ```
 
 Software requirements: it works with Python 3; required packages are: matplotlib, numpy.
@@ -23,7 +23,7 @@ How shall we perform follow-up observations when an interesting transient source
 <b>Reference</b>: [Andreoni et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021arXiv211101945A/abstract); to be published in The Astrophysical Journal Supplement Series; ArXiv 2111.01945
 
 ```
-jupyter-notebook plot_timeline_observatories.py
+jupyter-notebook plot_strategy.ipynb
 ```
 
 
