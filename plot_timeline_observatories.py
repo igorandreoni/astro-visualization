@@ -1,13 +1,11 @@
 __author__ = "Igor Andreoni"
 
-import os
-
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 
 
-def CreateGanttChart(filename, bandNames, posBands):
+def createGanttChart(filename, bandNames, posBands):
     """Create a Gantt chart of observatories with their timelines.
 
     Parameters
@@ -121,7 +119,9 @@ def CreateGanttChart(filename, bandNames, posBands):
     ax2.text(0.3, -0.04, "I. Andreoni (JSI)", color='grey', fontsize=15)
 
     plt.savefig('gantt.pdf', bbox_inches='tight')
-    # plt.show()
+
+    # Open the image
+    import os
     os.system("open gantt.pdf&")
 
 
@@ -133,7 +133,7 @@ if __name__ == '__main__':
                  'Gamma-Rays', 'X-Rays', 'Ultraviolet', 'Optical',
                  'Infrared', 'Millimeter', 'Radio']
     # Position of the bands in the plot
-    posBands = [0.9, 1.1, 1.95, 2.75, 3.8, 5, 6.7, 7.0, 7.3, 8.67, 9.3]
+    posBands = [0.9, 1.1, 2.0, 3., 4.2, 5.3, 6.7, 7.0, 7.3, 8.43, 9.1]
 
     # Call the main function to generate the Gantt chart
-    CreateGanttChart(filename, bandNames, posBands)
+    createGanttChart(filename, bandNames, posBands)
