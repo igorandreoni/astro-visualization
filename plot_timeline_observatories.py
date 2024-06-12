@@ -106,7 +106,7 @@ def createGanttChart(filename, bandNames, posBands):
     # Axis labels
     labelsx = ax.get_xticklabels()
     plt.setp(labelsx, rotation=30, fontsize=20)
-    ax.set_xlim([2021, 2040])
+    ax.set_xlim([2024, 2040])
 
     # Invert the Y axis
     ax.invert_yaxis()
